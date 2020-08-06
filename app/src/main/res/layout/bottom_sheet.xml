@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="23dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full name"
+                android:lineSpacingExtra="10dp"
+                android:textColor="#0d733e"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:id="@+id/firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/actor"
+                    android:lines="1"
+                    android:text="Sen."
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/firstname"
+                    android:fontFamily="@font/actor"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text=" T."
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/second"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/actor"
+                    android:layout_toRightOf="@id/middle"
+                    android:text=" Orji"
+                    android:textColor="#000"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:paddingTop="10dp"
+                android:lineSpacingExtra="190dp"
+                android:textColor="#0d733e"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <ImageView
+                    android:paddingTop="3dp"
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/envelope"
+
+                    />
+
+                <TextView
+                    android:id="@+id/gmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/image"
+                    android:fontFamily="@font/actor"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="Senkalutura@gmail.com"
+                    android:textColor="#333"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone number"
+                android:paddingTop="10dp"
+                android:lineSpacingExtra="190dp"
+                android:textColor="#0d733e"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abia"
+                android:textColor="#333"
+                android:paddingTop="2dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/actor"
+                />
+
+                <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                >
+
+                    <ImageView
+                        android:id="@+id/mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:lines="1"
+                        android:src="@drawable/mail"/>
+                                <ImageView
+                                    android:id="@+id/call"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:lines="1"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_toLeftOf="@id/mail"
+                                    android:src="@drawable/call"/>
+
+
+
+
+                            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+       </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
